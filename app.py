@@ -13,5 +13,5 @@ def index():
 @app.route('/greet',methods=['POST'])
 def greet():
     user_input = request.form['name_input']
-    flash(f'Hi, {user_input}, great to see you!')
+    flash(f'Hi {user_input}, great to see you!')
     return render_template('index.html')
